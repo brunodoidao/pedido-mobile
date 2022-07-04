@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="head_login">
+        <img src="imagens/logo-cutplanning (1).png" alt=""><br>
+    </div>
+
+    <div id="login">
+        <div class="desc_card"><br><br><br><br><br>
+            <h1>Login Pedido Web</h1>
+        </div><br><br>
+        <div class="card_login">
+            <br><br>
+            <h2 class="desc_input">Email:</h2>
+                <div class="div_input"><input class="input_login" type="text" id="txtEmail"></div>
+            <h2 class="desc_input">Senha:</h2>
+                <div class="div_input"><input class="input_login" type="password" id="txtSenha"></div><br>
+            <div class="div_btn_login"><a href="index.html"><button class="btn_action">Login</button></a><br><br><br></div>
+        </div><br>
+        <div class="rodape_login">
+            <h2>Não possui uma conta? <button onclick="aparece_cadastro()">clique aqui</button></h2>
+        </div>
+    </div>
+    <div id="cadastro" style="display: none;">
+        <br><br><div class="desc_card">
+            <h1>Faça seu cadastro</h1>
+        </div><br><br><br><br>
+        <div class="card_login">
+            <h2 class="desc_input">Nome Completo:</h2>
+            <div class="div_input"><input type="text" class="input_login"></div>
+                <br>
+            <h2 class="desc_input">Email:</h2>
+            <div class="div_input"><input type="text" class="input_login"></div>
+                <br>
+            <h2 class="desc_input">Senha:</h2>
+            <div class="div_input"><input type="password" class="input_login"></div>
+                <br>
+            <h2 class="desc_input">Confirme a senha:</h2>
+            <div class="div_input"><input type="password" class="input_login"></div><br><br><br><br><br><br><br>
+            <div class="div_btn_login"><button class="btn_action" onclick="aparece_login()">Cadastrar</button><br><br></div>
+        </div>
+    </div> 
+</body>
+<script src="script.js"></script>
+</html>
